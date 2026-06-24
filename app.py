@@ -86,7 +86,7 @@ def restaurant_chatbot():
 
     # tạo session chat
     if "chat_history" not in st.session_state:
-st.session_state.chat_history = [{"role": "assistant", "content": INITIAL_MESS}]
+        st.session_state.chat_history = [{"role": "assistant", "content": INITIAL_MESS}]
 
     # hiển thị lịch sử chat
     for message in st.session_state.chat_history:
